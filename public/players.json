@@ -1,0 +1,134 @@
+[
+    {
+      "playerId": "bpl-001",
+      "player_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_gfJ_VmNzNCax3kKtRF7cRpEFQyVqg7IFfbWjX8l_axKVxnw23DxmxKa9DNHAMmowe75Kli7-TeQqBqdqns_ZKhN1m0ww8vH5bLA_tg&s=10",
+      "player_name": "Mohammad Naim Sheikh",
+      "player_country": "Bangladesh",
+      "playing_role": "Opening Batter",
+      "rating": 8.5,
+      "batting_style": "Left-hand bat",
+      "bowling_style": "N/A",
+      "price": 11000000
+    },
+    {
+      "playerId": "bpl-002",
+      "player_img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/380200/380236.1.png",
+      "player_name": "Towhid Hridoy",
+      "player_country": "Bangladesh",
+      "playing_role": "Batter",
+      "rating": 9.1,
+      "batting_style": "Right-hand bat",
+      "bowling_style": "Right-arm offbreak",
+      "price": 9200000
+    },
+    {
+      "playerId": "bpl-003",
+      "player_img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319700/319734.3.png",
+      "player_name": "Mustafizur Rahman",
+      "player_country": "Bangladesh",
+      "playing_role": "Bowler",
+      "rating": 9.3,
+      "batting_style": "Left-hand bat",
+      "bowling_style": "Left-arm fast-medium",
+      "price": 15000000
+    },
+    {
+      "playerId": "bpl-004",
+      "player_img": "https://www.wisden.com/static-assets/images/players/59067.png?v=23.77",
+      "player_name": "Dasun Shanaka",
+      "player_country": "Sri Lanka",
+      "playing_role": "All-rounder",
+      "rating": 8.7,
+      "batting_style": "Right-hand bat",
+      "bowling_style": "Right-arm medium",
+      "price": 6500000
+    },
+    {
+      "playerId": "bpl-005",
+      "player_img": "https://api.bdcrictime.com/players/63752.png",
+      "player_name": "Shoriful Islam",
+      "player_country": "Bangladesh",
+      "playing_role": "Bowler",
+      "rating": 9.0,
+      "batting_style": "Left-hand bat",
+      "bowling_style": "Left-arm medium-fast",
+      "price": 4400000
+    },
+    {
+      "playerId": "bpl-006",
+      "player_img": "https://www.wisden.com/static-assets/images/players/70921.png?v=23.77",
+      "player_name": "Tanzim Hasan Sakib",
+      "player_country": "Bangladesh",
+      "playing_role": "Bowler",
+      "rating": 8.6,
+      "batting_style": "Right-hand bat",
+      "bowling_style": "Right-arm fast-medium",
+      "price": 6500000
+    },
+    {
+      "playerId": "bpl-007",
+      "player_img": "https://www.bssnews.net/assets/news_photos/2025/07/07/image-289930-1751890557.jpg",
+      "player_name": "Mohammad Saifuddin",
+      "player_country": "Bangladesh",
+      "playing_role": "All-rounder",
+      "rating": 8.4,
+      "batting_style": "Left-hand bat",
+      "bowling_style": "Right-arm fast-medium",
+      "price": 6800000
+    },
+    {
+      "playerId": "bpl-008",
+      "player_img": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/89235.png",
+      "player_name": "Nahid Rana",
+      "player_country": "Bangladesh",
+      "playing_role": "Bowler",
+      "rating": 8.8,
+      "batting_style": "Right-hand bat",
+      "bowling_style": "Right-arm fast",
+      "price": 5600000
+    },
+    {
+      "playerId": "bpl-009",
+      "player_img": "https://www.wisden.com/static-assets/images/players/63882.png?v=23.77",
+      "player_name": "Kusal Mendis",
+      "player_country": "Sri Lanka",
+      "playing_role": "Wicketkeeper Batter",
+      "rating": 8.9,
+      "batting_style": "Right-hand bat",
+      "bowling_style": "Right-arm legbreak",
+      "price": 8000000
+    },
+    {
+      "playerId": "bpl-010",
+      "player_img": "https://www.wisden.com/static-assets/images/players/70248.png?v=23.77",
+      "player_name": "Shamim Hossain",
+      "player_country": "Bangladesh",
+      "playing_role": "Batter",
+      "rating": 8.2,
+      "batting_style": "Left-hand bat",
+      "bowling_style": "Right-arm offbreak",
+      "price": 5600000
+    },
+    {
+      "playerId": "bpl-011",
+      "player_img": "http://wisden.com/static-assets/images/players/63206.png?v=23.77",
+      "player_name": "Litton Das",
+      "player_country": "Bangladesh",
+      "playing_role": "Wicketkeeper Batter",
+      "rating": 9.0,
+      "batting_style": "Right-hand bat",
+      "bowling_style": "N/A",
+      "price": 7000000
+    },
+    {
+      "playerId": "bpl-012",
+      "player_img": "https://p.imgci.com/db/PICTURES/CMS/308100/308189.15.jpg",
+      "player_name": "Mohammad Amir",
+      "player_country": "Pakistan",
+      "playing_role": "Bowler",
+      "rating": 9.2,
+      "batting_style": "Left-hand bat",
+      "bowling_style": "Left-arm fast",
+      "price": 9500000
+    }
+  ]
