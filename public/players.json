@@ -1,6 +1,6 @@
 [
     {
-      "playerId": "bpl-001",
+      "id": "bpl-001",
       "player_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_gfJ_VmNzNCax3kKtRF7cRpEFQyVqg7IFfbWjX8l_axKVxnw23DxmxKa9DNHAMmowe75Kli7-TeQqBqdqns_ZKhN1m0ww8vH5bLA_tg&s=10",
       "player_name": "Mohammad Naim Sheikh",
       "player_country": "Bangladesh",
@@ -11,7 +11,7 @@
       "price": 11000000
     },
     {
-      "playerId": "bpl-002",
+      "id": "bpl-002",
       "player_img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/380200/380236.1.png",
       "player_name": "Towhid Hridoy",
       "player_country": "Bangladesh",
@@ -22,7 +22,7 @@
       "price": 9200000
     },
     {
-      "playerId": "bpl-003",
+      "id": "bpl-003",
       "player_img": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319700/319734.3.png",
       "player_name": "Mustafizur Rahman",
       "player_country": "Bangladesh",
@@ -33,7 +33,7 @@
       "price": 15000000
     },
     {
-      "playerId": "bpl-004",
+      "id": "bpl-004",
       "player_img": "https://www.wisden.com/static-assets/images/players/59067.png?v=23.77",
       "player_name": "Dasun Shanaka",
       "player_country": "Sri Lanka",
@@ -44,7 +44,7 @@
       "price": 6500000
     },
     {
-      "playerId": "bpl-005",
+      "id": "bpl-005",
       "player_img": "https://api.bdcrictime.com/players/63752.png",
       "player_name": "Shoriful Islam",
       "player_country": "Bangladesh",
@@ -55,7 +55,7 @@
       "price": 4400000
     },
     {
-      "playerId": "bpl-006",
+      "id": "bpl-006",
       "player_img": "https://www.wisden.com/static-assets/images/players/70921.png?v=23.77",
       "player_name": "Tanzim Hasan Sakib",
       "player_country": "Bangladesh",
@@ -66,7 +66,7 @@
       "price": 6500000
     },
     {
-      "playerId": "bpl-007",
+      "id": "bpl-007",
       "player_img": "https://www.bssnews.net/assets/news_photos/2025/07/07/image-289930-1751890557.jpg",
       "player_name": "Mohammad Saifuddin",
       "player_country": "Bangladesh",
@@ -77,7 +77,7 @@
       "price": 6800000
     },
     {
-      "playerId": "bpl-008",
+      "id": "bpl-008",
       "player_img": "https://images.icc-cricket.com/image/upload/t_player-headshot-portrait-lg-webp/prd/assets/players/generic/colored/89235.png",
       "player_name": "Nahid Rana",
       "player_country": "Bangladesh",
@@ -88,7 +88,7 @@
       "price": 5600000
     },
     {
-      "playerId": "bpl-009",
+      "id": "bpl-009",
       "player_img": "https://www.wisden.com/static-assets/images/players/63882.png?v=23.77",
       "player_name": "Kusal Mendis",
       "player_country": "Sri Lanka",
@@ -99,7 +99,7 @@
       "price": 8000000
     },
     {
-      "playerId": "bpl-010",
+      "id": "bpl-010",
       "player_img": "https://www.wisden.com/static-assets/images/players/70248.png?v=23.77",
       "player_name": "Shamim Hossain",
       "player_country": "Bangladesh",
@@ -110,7 +110,7 @@
       "price": 5600000
     },
     {
-      "playerId": "bpl-011",
+      "id": "bpl-011",
       "player_img": "http://wisden.com/static-assets/images/players/63206.png?v=23.77",
       "player_name": "Litton Das",
       "player_country": "Bangladesh",
@@ -121,7 +121,7 @@
       "price": 7000000
     },
     {
-      "playerId": "bpl-012",
+      "id": "bpl-012",
       "player_img": "https://p.imgci.com/db/PICTURES/CMS/308100/308189.15.jpg",
       "player_name": "Mohammad Amir",
       "player_country": "Pakistan",

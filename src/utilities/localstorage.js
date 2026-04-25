@@ -14,5 +14,6 @@ const saveLocalStorage = cart => {
 
 export {
     getIdFromLocalStorage as getIdFromLs,
-    setIdToLocalStorage as setIdToLs
+    setIdToLocalStorage as setIdToLs,
+    saveLocalStorage
 }
