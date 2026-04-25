@@ -1,10 +1,10 @@
 
 
-const Player = ({ player }) => {
-    console.log(player)
+const Player = ({ player, handleChoosePlayer }) => {
+    // console.log(player)
     const { playerId, player_img, player_name, player_country, playing_role, price, batting_style, bowling_style, rating } = player
     return (
-        <div className="flex justify-center items-center bg-gray-100 p-4">
+        <div className="flex justify-center items-center bg-gray-100 p-2">
             {/* Main Card Container */}
             <div className="w-full max-w-sm bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
 
@@ -54,7 +54,7 @@ const Player = ({ player }) => {
                             <p className="text-blue-100 text-xs font-medium">Market Price</p>
                             <p className="text-xl font-black">{price}</p>
                         </div>
-                        <button className="bg-white text-blue-600 font-bold px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <button onClick={() => handleChoosePlayer(playerId)} className="bg-white text-blue-600 font-bold px-2 py-2 rounded-lg hover:bg-blue-50 transition-colors">
                             Choose Player
                         </button>
                     </div>

@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <div className="max-w-[1350px] mx-auto">
+      <div className="max-w-[1200px] mx-auto ">
         <div className="navbar">
           <div className="flex-1">
             <a className=" text-xl">
@@ -25,13 +25,7 @@ function App() {
           </div>
         </div>
         <div>
-          <div className='flex justify-between px-3 mb-6'>
-            <h2 className='font-bold text-[28px]'>Available Players</h2>
-            <div className='rounded-md border-[2px]'>
-              <button className='font-bold bg-[#E7FE29] px-[20px] py-[8px]'>Available</button>
-              <button className='px-[20px] py-[8px]'>Selected(0)</button>
-            </div>
-          </div>
+
           <div>
             {
               <Suspense fallback={<p>Players Are Loading.....</p>}>
