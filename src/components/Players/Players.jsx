@@ -3,43 +3,50 @@ import { use, useEffect, useState } from 'react';
 import Player from '../Player/Player';
 import Available from '../Available';
 import { getIdFromLs, saveLocalStorage, setIdToLs } from '../../utilities/localstorage';
+import SelectedPlayer from '../SelectedPlayer/SelectedPlayer';
 
-const Players = ({ playersPromise }) => {
+const Players = ({ playersPromise, handleBuyPlayer, handleRemovePlayer }) => {
     const players = use(playersPromise)
 
     const [playerIds, setPlayerId] = useState([])
-    
+
 
     useEffect(() => {
         const playerIds = getIdFromLs()
         setPlayerId(playerIds)
     }, [])
 
-    const handlePlayer = (id) => {
-        if (playerIds.includes(id)) {
-            const updatePlayerIds = playerIds.filter(playerId => playerId !== id)
+    // const selectedLimitation = 6
+    const handlePlayer = (player) => {
+        if (playerIds.includes(player.id)) {
+            const updatePlayerIds = playerIds.filter(playerId => playerId !== player.id)
             setPlayerId(updatePlayerIds)
             saveLocalStorage(updatePlayerIds)
+            handleRemovePlayer(player.price)
         }
         else {
-            setPlayerId([...playerIds, id])
-            setIdToLs(id)
+            if (playerIds.length >= 6) return alert('Your limit is 6')
+            setPlayerId([...playerIds, player.id])
+            setIdToLs(player.id)
+            handleBuyPlayer(player.price)
         }
     }
 
-
     const selectedPlayers = players.filter(player => playerIds.includes(player.id))
-    console.log(selectedPlayers)
-
     return (
         <>
-            <Available availablePlayers='Available Players' players={players}></Available>
+            <Available players={players} selectedPlayers={selectedPlayers}></Available>
             <div className='grid grid-cols-4 gap-3'>
                 {
-                    players.map(player => <Player key={player.playerId} player={player} handlePlayer={handlePlayer} playerIds={playerIds} ></Player>)
+                    players.map(player => <Player key={player.id} player={player} handlePlayer={handlePlayer} playerIds={playerIds} ></Player>)
                 }
             </div>
-            <Available availablePlayers='Selected Players(4/5)'></Available>
+            <Available selectedPlayers={selectedPlayers} selectedPlayerText></Available>
+            <div>
+                {
+                    selectedPlayers.map(selectedPlayer => <SelectedPlayer key={selectedPlayer.id} selectedPlayer={selectedPlayer}></SelectedPlayer>)
+                }
+            </div>
 
         </>
 

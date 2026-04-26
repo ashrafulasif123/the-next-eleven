@@ -3,7 +3,7 @@ const Player = ({ player, handlePlayer, playerIds }) => {
     // console.log(player)
     const { id, player_img, player_name, player_country, playing_role, price, batting_style, bowling_style, rating } = player
     const isSelected = playerIds.includes(id)
-    
+
     return (
         <div className="flex justify-center items-center bg-gray-100 p-2">
             {/* Main Card Container */}
@@ -55,7 +55,7 @@ const Player = ({ player, handlePlayer, playerIds }) => {
                             <p className="text-blue-100 text-xs font-medium">Market Price</p>
                             <p className="text-xl font-black">{price}</p>
                         </div>
-                        <button onClick={() => handlePlayer(id)} className="bg-white text-blue-600 font-bold px-2 py-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        <button onClick={() => handlePlayer(player)} className="bg-white text-blue-600 font-bold px-2 py-2 rounded-lg hover:bg-blue-50 transition-colors">
                             {isSelected ? 'Remove Player' : 'Choose Player'}
                         </button>
                     </div>
