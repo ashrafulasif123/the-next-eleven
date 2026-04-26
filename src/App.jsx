@@ -10,25 +10,30 @@ function App() {
   const playersPromise = fetch('players.json')
     .then(res => res.json())
 
-  const [remainingBalance, setRemainignBalance] = useState(6000000000)
+  const [remainingBalance, setRemainingBalance] = useState(0)
 
   useEffect(() => {
     const remainingBalance = getRemainingBalanceFromLs()
-    setRemainignBalance(remainingBalance)
+    setRemainingBalance(remainingBalance)
   }, [])
+
+  
+
   // console.log(remainingBalance)
 
   const handleBuyPlayer = (playerPrice) => {
     if (remainingBalance < playerPrice) return alert("You have not enough balance to select this player")
     const updateRemainingBalance = remainingBalance - playerPrice
-    setRemainignBalance(updateRemainingBalance)
+    setRemainingBalance(updateRemainingBalance)
     setRemainingBalanceToLs(updateRemainingBalance)
   }
 
   const handleRemovePlayer = (playerPrice) => {
     const updateRemainingBalance = remainingBalance + playerPrice
-    setRemainignBalance(updateRemainingBalance)
+    setRemainingBalance(updateRemainingBalance)
     setRemainingBalanceToLs(updateRemainingBalance)
+   
+    
   }
 
   return (

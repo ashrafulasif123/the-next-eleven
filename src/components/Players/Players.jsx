@@ -11,6 +11,7 @@ const Players = ({ playersPromise, handleBuyPlayer, handleRemovePlayer }) => {
     const [playerIds, setPlayerId] = useState([])
 
 
+
     useEffect(() => {
         const playerIds = getIdFromLs()
         setPlayerId(playerIds)
@@ -32,21 +33,70 @@ const Players = ({ playersPromise, handleBuyPlayer, handleRemovePlayer }) => {
         }
     }
 
+    const [availableOrNot, setAvailableOrNot] = useState('available')
+    useEffect(() => {
+        const check = localStorage.getItem("view")
+        setAvailableOrNot(check)
+    }, [])
+
+
+    const handleView = (playerList) => {
+        const view = playerList
+        setAvailableOrNot(view)
+        localStorage.setItem("view", view)
+    }
+
     const selectedPlayers = players.filter(player => playerIds.includes(player.id))
     return (
         <>
-            <Available players={players} selectedPlayers={selectedPlayers}></Available>
-            <div className='grid grid-cols-4 gap-3'>
+            <div className='pb-10'>
                 {
-                    players.map(player => <Player key={player.id} player={player} handlePlayer={handlePlayer} playerIds={playerIds} ></Player>)
+                    availableOrNot === 'available'
+                        ?
+                        <div>
+                            <Available players={players} selectedPlayers={selectedPlayers} handleView={handleView} availableOrNot={availableOrNot}></Available>
+                            <div className='grid grid-cols-4 gap-3'>
+                                {
+                                    players.map(player => <Player key={player.id} player={player} handlePlayer={handlePlayer} playerIds={playerIds} ></Player>)
+                                }
+                            </div>
+                        </div>
+                        :
+                        <div>
+                            <Available selectedPlayers={selectedPlayers} selectedPlayerText handleView={handleView} availableOrNot={availableOrNot}></Available>
+                            <div>
+                                {
+                                    selectedPlayers.map(selectedPlayer => <SelectedPlayer key={selectedPlayer.id} selectedPlayer={selectedPlayer} handlePlayer={handlePlayer}></SelectedPlayer>)
+                                }
+                            </div>
+                            <div className='border rounded-xl inline-block p-1 mt-10'>
+                                <button className='font-bold bg-[#E7FE29] px-[20px] py-[8px] rounded-xl'>Add More Player</button>
+                            </div>
+                        </div>
                 }
+
+
+                {/* <div>
+                    <Available players={players} selectedPlayers={selectedPlayers} handleView={handleView}></Available>
+                    <div className='grid grid-cols-4 gap-3'>
+                        {
+                            players.map(player => <Player key={player.id} player={player} handlePlayer={handlePlayer} playerIds={playerIds} ></Player>)
+                        }
+                    </div>
+                </div>
+                <div>
+                    <Available selectedPlayers={selectedPlayers} selectedPlayerText handleView={handleView}></Available>
+                    <div>
+                        {
+                            selectedPlayers.map(selectedPlayer => <SelectedPlayer key={selectedPlayer.id} selectedPlayer={selectedPlayer} handlePlayer={handlePlayer}></SelectedPlayer>)
+                        }
+                    </div>
+                    <div className='border rounded-xl inline-block p-1 mt-10'>
+                        <button className='font-bold bg-[#E7FE29] px-[20px] py-[8px] rounded-xl'>Add More Player</button>
+                    </div>
+                </div> */}
             </div>
-            <Available selectedPlayers={selectedPlayers} selectedPlayerText></Available>
-            <div>
-                {
-                    selectedPlayers.map(selectedPlayer => <SelectedPlayer key={selectedPlayer.id} selectedPlayer={selectedPlayer}></SelectedPlayer>)
-                }
-            </div>
+
 
         </>
 

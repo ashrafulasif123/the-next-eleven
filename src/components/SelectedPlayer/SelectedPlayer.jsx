@@ -1,6 +1,6 @@
-const SelectedPlayer = ({ selectedPlayer }) => {
+const SelectedPlayer = ({ selectedPlayer, handlePlayer }) => {
 
-    const { id, player_img, player_name, batting_style } = selectedPlayer
+    const { player_img, player_name, batting_style } = selectedPlayer
     return (
         <div className="flex items-center justify-between p-3 border rounded-lg shadow-sm hover:bg-gray-50">
 
@@ -22,7 +22,7 @@ const SelectedPlayer = ({ selectedPlayer }) => {
             </div>
 
             {/* Right Side (Delete) */}
-            <button className="text-red-500 hover:text-red-700 text-xl">
+            <button onClick={() => handlePlayer(selectedPlayer)} className="text-red-500 hover:text-red-700 text-xl">
                 🗑️
             </button>
         </div>

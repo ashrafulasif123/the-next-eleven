@@ -13,7 +13,11 @@ const saveLocalStorage = cart => {
 }
 
 const getRemainingBalanceFromLs = () => {
-    return localStorage.getItem("balance") || 6000000000
+    const balance = localStorage.getItem("balance")
+    if(balance !== null){
+        return Number(balance)
+    }
+    return 6000000000
 }
 
 const setRemainingBalanceToLs = remainingBalance => {
