@@ -41,9 +41,9 @@ const Players = ({ playersPromise, handleBuyPlayer, handleRemovePlayer }) => {
 
 
     const handleView = (playerList) => {
-        const view = playerList
-        setAvailableOrNot(view)
-        localStorage.setItem("view", view)
+        // const view = playerList
+        setAvailableOrNot(playerList)
+        localStorage.setItem("view", playerList)
     }
 
     const selectedPlayers = players.filter(player => playerIds.includes(player.id))
@@ -70,34 +70,11 @@ const Players = ({ playersPromise, handleBuyPlayer, handleRemovePlayer }) => {
                                 }
                             </div>
                             <div className='border rounded-xl inline-block p-1 mt-10'>
-                                <button className='font-bold bg-[#E7FE29] px-[20px] py-[8px] rounded-xl'>Add More Player</button>
+                                <button onClick={() => handleView('available')} className='font-bold bg-[#E7FE29] px-[20px] py-[8px] rounded-xl'>Add More Player</button>
                             </div>
                         </div>
                 }
-
-
-                {/* <div>
-                    <Available players={players} selectedPlayers={selectedPlayers} handleView={handleView}></Available>
-                    <div className='grid grid-cols-4 gap-3'>
-                        {
-                            players.map(player => <Player key={player.id} player={player} handlePlayer={handlePlayer} playerIds={playerIds} ></Player>)
-                        }
-                    </div>
-                </div>
-                <div>
-                    <Available selectedPlayers={selectedPlayers} selectedPlayerText handleView={handleView}></Available>
-                    <div>
-                        {
-                            selectedPlayers.map(selectedPlayer => <SelectedPlayer key={selectedPlayer.id} selectedPlayer={selectedPlayer} handlePlayer={handlePlayer}></SelectedPlayer>)
-                        }
-                    </div>
-                    <div className='border rounded-xl inline-block p-1 mt-10'>
-                        <button className='font-bold bg-[#E7FE29] px-[20px] py-[8px] rounded-xl'>Add More Player</button>
-                    </div>
-                </div> */}
             </div>
-
-
         </>
 
     );
